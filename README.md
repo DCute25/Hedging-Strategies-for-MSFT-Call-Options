@@ -27,29 +27,25 @@ Python for data fetching, simulation, and portfolio construction.
 R for computing implied volatility and option Greeks (Delta and Vega).
 
 # 📂 Repository Structure
-.
-├── option_ric_tools.py       # Python script for retrieving valid option RICs using Refinitiv API
-.
-├── price_data.csv            # Price data for MSFT and corresponding call/put options
-.
-├── Hedging Assignment.pdf    # Full technical report detailing the experiment, results, and conclusions
-.
-├── README.md                 # You're here
+- ├── option_ric_tools.py       # Python script for retrieving valid option RICs using Refinitiv API
+- ├── price_data.csv            # Price data for MSFT and corresponding call/put options
+- ├── Hedging Assignment.pdf    # Full technical report detailing the experiment, results, and conclusions
+- ├── README.md                 # You're here
 
-# ⚙️ How It Works
-Data Collection:
+## ⚙️ How It Works
+# Data Collection:
 
 MSFT price data and option quotes (strikes ranging from 280 to 360) are fetched from Yahoo Finance and Refinitiv using custom Python scripts.
 
 Focused on ATM call options with 45-day maturities.
 
-Hedging Implementation:
+# Hedging Implementation:
 
 Delta Hedging: Constructs a portfolio by adjusting positions in MSFT stock.
 
 Delta-Vega Hedging: Adds a second option with extended maturity to hedge against volatility using calculated alpha (Δ) and eta (κ) values.
 
-Simulation:
+# Simulation:
 
 Hedging strategy is repeated over 10 different maturities (June 2021 – March 2022).
 
