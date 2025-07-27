@@ -1,26 +1,26 @@
 # Hedging-Strategies-for-MSFT-Call-Options
 This project investigates the effectiveness of delta and delta-vega hedging strategies for At-the-Money (ATM) Microsoft (MSFT) call options. Using real market data from Yahoo Finance and Refinitiv, the study evaluates hedging accuracy under varying re-hedging frequencies (daily vs. 5-day) and transaction cost scenarios.
 
-## 📌 Project Highlights
-🧠 Strategies Analyzed:
+# 📌 Project Highlights
+## 🧠 Strategies Analyzed:
 
 Delta Hedging – minimizes sensitivity to small price changes in the underlying asset.
 
 Delta-Vega Hedging – extends delta hedging by accounting for changes in volatility.
 
-🕒 Hedging Frequencies:
+## 🕒 Hedging Frequencies:
 
 Rebalancing portfolios every 1 day and every 5 days.
 
-🔁 Robustness:
+## 🔁 Robustness:
 
 Simulations are repeated 10 times using different option maturities to assess variability.
 
-🧮 Error Metric:
+## 🧮 Error Metric:
 
 Mean Squared Error (MSE) used to quantify hedging accuracy.
 
-📊 Tools Used:
+## 📊 Tools Used:
 
 Python for data fetching, simulation, and portfolio construction.
 
@@ -32,14 +32,14 @@ R for computing implied volatility and option Greeks (Delta and Vega).
 - ├── Hedging Assignment.pdf    # Full technical report detailing the experiment, results, and conclusions
 - ├── README.md                 # You're here
 
-## ⚙️ How It Works
-# Data Collection:
+# ⚙️ How It Works
+## Data Collection:
 
 MSFT price data and option quotes (strikes ranging from 280 to 360) are fetched from Yahoo Finance and Refinitiv using custom Python scripts.
 
 Focused on ATM call options with 45-day maturities.
 
-# Hedging Implementation:
+## Hedging Implementation:
 
 Delta Hedging: Constructs a portfolio by adjusting positions in MSFT stock.
 
