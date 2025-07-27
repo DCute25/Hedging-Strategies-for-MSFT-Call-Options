@@ -33,25 +33,25 @@ This project investigates the effectiveness of delta and delta-vega hedging stra
 - ├── README.md                 # You're here
 
 # ⚙️ How It Works
-## Data Collection:
+Data Collection:
 
-MSFT price data and option quotes (strikes ranging from 280 to 360) are fetched from Yahoo Finance and Refinitiv using custom Python scripts.
+- MSFT price data and option quotes (strikes ranging from 280 to 360) are fetched from Yahoo Finance and Refinitiv using custom Python scripts.
 
-Focused on ATM call options with 45-day maturities.
+- Focused on ATM call options with 45-day maturities.
 
-## Hedging Implementation:
+Hedging Implementation:
 
-Delta Hedging: Constructs a portfolio by adjusting positions in MSFT stock.
+- Delta Hedging: Constructs a portfolio by adjusting positions in MSFT stock.
 
-Delta-Vega Hedging: Adds a second option with extended maturity to hedge against volatility using calculated alpha (Δ) and eta (κ) values.
+- Delta-Vega Hedging: Adds a second option with extended maturity to hedge against volatility using calculated alpha (Δ) and eta (κ) values.
 
-## Simulation:
+Simulation:
 
-Hedging strategy is repeated over 10 different maturities (June 2021 – March 2022).
+- Hedging strategy is repeated over 10 different maturities (June 2021 – March 2022).
 
-Daily and 5-day rebalancing strategies are tested.
+- Daily and 5-day rebalancing strategies are tested.
 
-Final accuracy is measured via average and standard deviation of MSEs.
+- Final accuracy is measured via average and standard deviation of MSEs.
 
 # 🔍 Key Findings
 Strategy	Frequency	Avg. MSE	Std. Dev
