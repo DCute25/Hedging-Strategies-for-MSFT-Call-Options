@@ -2,29 +2,29 @@
 This project investigates the effectiveness of delta and delta-vega hedging strategies for At-the-Money (ATM) Microsoft (MSFT) call options. Using real market data from Yahoo Finance and Refinitiv, the study evaluates hedging accuracy under varying re-hedging frequencies (daily vs. 5-day) and transaction cost scenarios.
 
 # 📌 Project Highlights
-## 🧠 Strategies Analyzed:
+🧠 Strategies Analyzed:
 
-Delta Hedging – minimizes sensitivity to small price changes in the underlying asset.
+- Delta Hedging – minimizes sensitivity to small price changes in the underlying asset.
 
-Delta-Vega Hedging – extends delta hedging by accounting for changes in volatility.
+- Delta-Vega Hedging – extends delta hedging by accounting for changes in volatility.
 
-## 🕒 Hedging Frequencies:
+🕒 Hedging Frequencies:
 
-Rebalancing portfolios every 1 day and every 5 days.
+- Rebalancing portfolios every 1 day and every 5 days.
 
-## 🔁 Robustness:
+🔁 Robustness:
 
-Simulations are repeated 10 times using different option maturities to assess variability.
+- Simulations are repeated 10 times using different option maturities to assess variability.
 
-## 🧮 Error Metric:
+🧮 Error Metric:
 
-Mean Squared Error (MSE) used to quantify hedging accuracy.
+- Mean Squared Error (MSE) used to quantify hedging accuracy.
 
-## 📊 Tools Used:
+📊 Tools Used:
 
-Python for data fetching, simulation, and portfolio construction.
+- Python for data fetching, simulation, and portfolio construction.
 
-R for computing implied volatility and option Greeks (Delta and Vega).
+- R for computing implied volatility and option Greeks (Delta and Vega).
 
 # 📂 Repository Structure
 - ├── option_ric_tools.py       # Python script for retrieving valid option RICs using Refinitiv API
