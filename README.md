@@ -45,7 +45,7 @@ Delta Hedging: Constructs a portfolio by adjusting positions in MSFT stock.
 
 Delta-Vega Hedging: Adds a second option with extended maturity to hedge against volatility using calculated alpha (Δ) and eta (κ) values.
 
-# Simulation:
+## Simulation:
 
 Hedging strategy is repeated over 10 different maturities (June 2021 – March 2022).
 
