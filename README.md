@@ -28,7 +28,7 @@ This project investigates the effectiveness of delta and delta-vega hedging stra
 
 # 📂 Repository Structure
 - ├── option_ric_tools.py        # Python script for retrieving valid option RICs using Refinitiv API
-- ├── FiRMa1_data_fetching.ipynb # Fetching prices for call option with different strike prices and exporting to price_data.csv
+- ├── FiRMa1_data_fetching.ipynb # Fetch prices for call option with different strike prices and export to price_data.csv
 - ├── price_data.csv             # Price data for MSFT and corresponding call/put options
 - ├── Hedging Assignment.pdf     # Full technical report detailing the experiment, results, and conclusions
 - ├── README.md                  # You're here
